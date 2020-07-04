@@ -1,0 +1,81 @@
+/*
+David's Calculator
+Version 1.0
+04/07/2020
+Performs basic float arithmetic and memory functions. 
+Scales to the browser window.
+Accepts keyboard input.
+*/
+
+
+body {
+	background: #111111;
+}
+
+button {
+	/* position: fixed; */
+	/* left: 35%; */
+	/* top: 10%; */
+	width : 95%;
+	height: 95%;
+	font-size: 6vh;
+	background:#666666;	
+}
+
+#container {
+	width: 90%;
+	height: 90%;
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	background: #444444;
+	display: grid;
+	grid-template-rows: 25% 75%;
+}
+
+#screen {
+	width: 98.5%;
+	height: 95%;
+	align-self: center;
+	justify-self: center;
+	background: hsl(115, 20%, 20%);
+	display: grid;
+	grid-template-rows: 30% 65% 5%;
+}
+
+#expression {
+	font-size: 6vh;
+	line-height: 80%;
+}
+
+#result {
+	font-size: 12vh;
+	text-align: right;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	line-height: 80%;
+	margin-bottom: -1.125%;
+}
+
+#scrollbar {
+	height: 10px;
+}
+
+#buttons {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(5, 20%);
+}
+
+button:hover {
+	background: #111;
+	color: #444444;
+}
+
+.num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

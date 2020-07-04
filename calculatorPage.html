@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!--
+David's Calculator
+Version 1.0
+04/07/2020
+Performs basic float arithmetic and memory functions. 
+Scales to the browser window.
+Accepts keyboard input.
+-->
+
+<head> 
+	<title>David's Calculator</title>
+	<link rel="stylesheet" href="calculatorStyle.css">
+	<script src="./calculator.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="screen">
+			<div id="expression">
+			</div>
+			<div id="result">
+			0
+			</div>
+			<div id="scrollbar">
+			</div>
+		</div>	
+		<div id="buttons">
+			<div class="num">
+				<button type="button" onclick="buttonPress('MR')">MR</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('MS')">MS</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('M+')">M+</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('C')">C</button>
+			</div>
+			<div class="num">
+				<button type="button" accesskey="a" onclick="buttonPress('1')">1</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('2')">2</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('3')">3</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('/')">/</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('4')">4</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('5')">5</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('6')">6</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('*')">*</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('7')">7</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('8')">8</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('9')">9</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('-')">-</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('.')">.</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('0')">0</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('=')">=</button>
+			</div>
+			<div class="num">
+				<button type="button" onclick="buttonPress('+')">+</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
